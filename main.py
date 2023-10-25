@@ -1,22 +1,16 @@
 import os
 
 
-HYPERX_ID = "Headset HyperX"
-ENCEINTES_ID = "Haut-parleurs Enceintes"
-
-
 def list_speakers():
+    # This work if you know the name of the devices (There is other ways to get all devices, Google is your friend :P)
     return [
-        HYPERX_ID,
-        ENCEINTES_ID,
+        "Headset HyperX",
+        "Haut-parleurs Enceintes",
     ]
 
 
 def select_speaker_device():
     speakers = list_speakers()
-    if not speakers:
-        print("No speaker devices found.")
-        return
 
     print("Available speaker devices:")
     for i, speaker in enumerate(speakers):
